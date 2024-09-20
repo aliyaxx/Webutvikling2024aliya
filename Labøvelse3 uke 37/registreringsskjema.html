@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="nb">
+    <head>
+    <meta charset="UTF-8">
+    <meta name= "viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>Registreringsskjema</title>
+</head>
+<body>
+    <form>
+        <label for="navn">Navn</label>
+        <input type="text" placeholder="Skriv inn navnet ditt her" pattern="[A-Za-zæøåÆøÅ]{2,}" id="navn">
+        
+        <label for="epost">Epost</label>
+        <input type="email" placeholder="Skriv inn epost her" required id="epost">
+        
+        <label for="passord">Passord</label>
+        <input type="password" placeholder="Skriv inn passord" minlength="8" pattern ="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required id="passord">
+       
+        <label for="alder">Alder</label>
+        <input type="number" placeholder="Skriv alder her" min="18" max="99" required id="alder">
+        
+        <label for="telefonnummer">Telefonnummer</label>
+        <input type="tel" placeholder="Skriv inn telefonnummer her" pattern="[0-9]{8,12}"  id="telefonnummer" required>
+        
+        <label for="fødselsdato">Fødselsdato</label>
+        <input type="date" max="2023-12-31" required id="fødselsdato">
+        
+        <label>Kjønn:
+         Mann
+            <input type="radio" name="valg">
+        </label>
+        <label> Kvinne
+            <input type="radio" name="valg">
+        </label>
+        <label> Annet
+            <input type="radio" name="valg">
+        </label>
+        
+        <label>
+            Land
+        <select name="Land" required>
+            <option value="">Velg land</option>
+            <option value="Norge">Norge</option>
+            <option value="Sverige">Sverige</option>
+            <option value="Danmark">Danmark</option>
+        </select>
+    </label>
+    <label for="checkbox">Personvern</label>
+    <input type="checkbox" id="checkbox" required>
+    <input type="submit" value="Send">
+    </form>
+</body>             
+</html>
