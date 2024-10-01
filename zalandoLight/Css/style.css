@@ -1,3 +1,12 @@
+html{
+    font-size: 18px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+
 body{
 
     font-family: Arial, Helvetica, sans-serif;
@@ -37,6 +46,10 @@ img{
     gap: 1rem;
 }
 
+.flex-space-b h2{
+    width: 100%;
+}
+
 .flex-space-b form{
     position: relative;
 }
@@ -49,6 +62,12 @@ img{
         color: #ff0000;
     }
 
-
-
+.product-card {
+    min-width: 200px;
+    max-width: 350px;
+    width: 100%;
+    box-shadow: 13px 10px 20px 0px #efefef;
+    border-radius: 4px;
+    padding: 1rem;
+}
 
